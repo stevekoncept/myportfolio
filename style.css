@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+a:link {
+  text-decoration: none;
+  font-family: "Space Mono", monospace;
+}
+button {
+  font-family: "Space Mono", monospace;
+}
+button:hover {
+  cursor: pointer;
+}
+.custom-flexPad {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+  padding-bottom: 8rem;
+}
+/* h1 {
+  margin: 0 ;
+} */
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 5rem;
+}
+.custom-btn {
+  padding: 1rem 2.8rem;
+  border-radius: 10rem;
+}
+.hire-btn {
+  color: white;
+  background-color: black;
+}
+.hire-btn:hover {
+  cursor: pointer;
+}
+.headtext {
+  font-family: "Space Mono", monospace;
+  font-size: 1.2rem !important;
+  color: rgb(128, 128, 128);
+  margin-bottom: 2rem;
+}
+/*  */
+.nav-section {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  border-bottom: 0.1px solid #8080804d;
+}
+.nav-cell {
+  padding-block: 1.2em;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-cell h1 {
+  font-size: 3rem;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-cell ul {
+  display: flex;
+  gap: 2.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.nav-cell ul a {
+  color: black;
+}
+.nav-cell button {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/*  */
+.main-section {
+  padding-top: 7%;
+  display: flex;
+  /* grid-template-columns: repeat(2, 50%); */
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+  padding-bottom: 16rem;
+}
+.main-left {
+  width: 100%;
+}
+.name {
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+.name h1 {
+  font-size: 8rem;
+  font-weight: 900;
+}
+.name span {
+  color: white;
+  -webkit-text-stroke: 1px #80808080;
+}
+.bio {
+  width: 75%;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: gray;
+}
+.portfolio-btn {
+  background-color: black;
+  color: white;
+}
+.hire-btn2 {
+  background-color: white;
+  border: 1px solid black;
+  font-weight: bold;
+}
+.main-btn-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.main-btn-box button {
+  font-family: "Poppins", sans-serif;
+}
+.img-box {
+  width: 100%;
+  border: 2px solid #8080804d;
+  border-bottom: 0;
+  border-radius: 2rem;
+  margin-bottom: 1.5rem;
+}
+.img-box img {
+  width: 100%;
+}
+.img-disc {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 1rem;
+  text-transform: uppercase;
+}
+.img-disc div {
+  border: 0.2rem solid #8080804d;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.img-disc div p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #808080;
+  font-family: "Space Mono", monospace;
+}
+.img-disc span {
+  display: block;
+  font-size: 5.6rem;
+  font-weight: bold;
+  line-height: 1;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+/*  */
+.about-section {
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  justify-content: space-between;
+  gap: 6rem;
+}
+.about-bio {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Space Mono", monospace;
+  font-weight: 500;
+}
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.socials a{
+  color: black;
+  border: 1px solid black;
+  border-radius: 10rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+}
+.socials i{
+  margin-right: 0.5rem;
+}
+.about-card {
+  background-color: black;
+  color: white;
+  padding: 3.5rem 3rem;
+  border-radius: 4px;
+}
+.about-card header {
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.about-card header h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+}
+.about-card header p {
+  font-size: 1.6rem;
+  font-family: "Space Mono", monospace;
+}
+.about-card-info hr {
+  border: 1px solid #8080804d;
+}
+.about-card-info p {
+  font-size: 1.4rem;
+  padding-block: 1rem;
+  font-weight: 100;
+}
+.about-card-info div i {
+  font-size: 2.4rem;
+  color: black;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 2px;
+}
+.about-card-info-box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.about-card-info-box span {
+  display: block;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
