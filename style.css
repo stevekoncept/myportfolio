@@ -10,8 +10,11 @@ body {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
-
+section {
+  scroll-margin-top: 8rem;
+}
 li {
   list-style: none;
 }
@@ -47,11 +50,18 @@ button:hover {
   border-radius: 10rem;
 }
 .hire-btn {
-  color: white;
   background-color: black;
 }
+.hire-btn a {
+  color: white;
+}
 .hire-btn:hover {
-  cursor: pointer;
+  background-color: white;
+  border: 1px solid black;
+  transition: background-color 0.3s;
+}
+.hire-btn a:hover {
+  color: black;
 }
 .headtext {
   font-family: "Space Mono", monospace;
@@ -95,6 +105,10 @@ button:hover {
 .nav-cell ul a {
   color: black;
 }
+.nav-cell ul a:hover {
+  border-bottom: 2px solid black;
+  transition: all 1s ease-out;
+}
 .nav-cell button {
   text-transform: uppercase;
   font-weight: bold;
@@ -102,7 +116,7 @@ button:hover {
 }
 /*  */
 .main-section {
-  padding-top: 7%;
+  padding-top: 8%;
   display: flex;
   /* grid-template-columns: repeat(2, 50%); */
   align-items: center;
@@ -132,17 +146,27 @@ button:hover {
 }
 .portfolio-btn {
   background-color: black;
+}
+.portfolio-btn a {
   color: white;
 }
 .portfolio-btn:hover {
-  background-color: #343a40;
-  /* color: black; */
+  background-color: white;
+  color: black;
   border: 1px solid black;
+  transition: background-color 0.3s;
+}
+.portfolio-btn a:hover {
+  color: black;
+  font-weight: 900;
 }
 .hire-btn2 {
   background-color: white;
   border: 1px solid black;
   font-weight: bold;
+}
+.hire-btn2 a {
+  color: black;
 }
 .hire-btn2:hover {
   background-color: #f8f9fa;
@@ -199,7 +223,7 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(2, 48%);
   justify-content: space-between;
-  gap: 6rem;
+  gap: 4rem;
 }
 .about-bio {
   font-size: 2rem;
@@ -207,10 +231,15 @@ button:hover {
   font-family: "Space Mono", monospace;
   font-weight: 500;
 }
+.about-bio span {
+  display: block;
+  margin-bottom: 1.4rem;
+}
 .socials {
   display: flex;
   gap: 1.5rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 .socials a {
   color: black;
@@ -222,6 +251,7 @@ button:hover {
 .socials a:hover {
   background-color: black;
   color: white;
+  transition: background-color 0.3s;
 }
 .socials i {
   margin-right: 0.5rem;
@@ -242,16 +272,23 @@ button:hover {
   font-weight: 800;
 }
 .about-card header p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: "Space Mono", monospace;
 }
 .about-card-info hr {
   border: 1px solid #8080804d;
 }
 .about-card-info p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding-block: 1.2rem;
-  font-weight: 100;
+  font-weight: 200;
+  letter-spacing: 1px;
+  /* font-family: "Space Mono", monospace; */
+}
+.about-card-info p span {
+  font-size: 1.4rem;
+  /* font-family: "Poppins", sans-serif; */
+
 }
 .about-card-info div i {
   font-size: 2.4rem;
@@ -339,8 +376,9 @@ meter::-webkit-meter-optimum-value {
 }
 .consult-section p {
   line-height: 1;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 .consult-btn-box {
   display: flex;
@@ -365,13 +403,13 @@ meter::-webkit-meter-optimum-value {
 }
 /*  */
 .footer-section {
-  padding-block: 6rem;
+  padding-block: 6rem 4rem;
 }
 .footer-top {
   display: grid;
   grid-template-columns: repeat(3, 30%);
   justify-content: space-between;
-  gap: 8rem;
+  gap: 6rem;
   padding-bottom: 6rem;
 }
 .footer1 h2 {
@@ -390,9 +428,12 @@ meter::-webkit-meter-optimum-value {
   align-items: center;
 }
 .footer-icon-pack a {
-  color: black;
   font-size: 2rem;
   color: #808080;
+}
+.footer-icon-pack a:hover {
+  color: black;
+  transition: color 0.3s;
 }
 .footer2,
 .footer3 {
@@ -412,6 +453,10 @@ meter::-webkit-meter-optimum-value {
 }
 .footer2 a {
   color: #808080;
+}
+.footer2 a:hover {
+  color: black;
+  transition: color 0.3s;
 }
 .footer2 ul {
   display: flex;
@@ -436,4 +481,59 @@ meter::-webkit-meter-optimum-value {
   color: #808080;
   font-size: 1rem;
   letter-spacing: 1px;
+}
+
+/*  */
+@media (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+  .container {
+    padding-inline: 4rem;
+  }
+  .custom-flexPad {
+    gap: 4rem;
+  }
+  .custom-pad {
+    padding-bottom: 8rem;
+  }
+  .hire-btn {
+    letter-spacing: 1px;
+  }
+  .footer-top {
+    gap: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+  .container {
+    padding-inline: 2rem;
+  }
+  .name h1 {
+    font-size: 7rem;
+  }
+  .main-section {
+    padding-top: 9%;
+    gap: 3rem;
+    /* display: grid;
+    grid-template-columns: repeat(1, 100%); */
+  }
+  .portfolio-btn,
+  .hire-btn2 {
+    font-size: 1.6rem;
+  }
+  .bio {
+    width: 100%;
+  }
+  .about-bio {
+    font-size: 2rem;
+  }
+  .headtext {
+    font-size: 1.2rem !important;
+  }
+  .skills {
+    grid-template-columns: repeat(2, 48%);
+  }
 }
