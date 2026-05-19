@@ -145,13 +145,13 @@ button:hover {
 .main-section {
   padding-top: 8%;
   display: flex;
-  /* grid-template-columns: repeat(2, 50%); */
+  /* grid-template-columns:repeat(3,45%); */
   align-items: center;
   justify-content: space-between;
-  gap: 8rem;
+  gap: 6rem;
 }
 .main-left {
-  width: 100%;
+  /* width: 100%; */
 }
 .name {
   line-height: 1;
@@ -166,10 +166,10 @@ button:hover {
   -webkit-text-stroke: 1px #80808080;
 }
 .bio {
-  width: 75%;
+  width: 65%;
   margin-bottom: 2rem;
   font-size: 1.5rem;
-  color: gray;
+  color: black;
 }
 .portfolio-btn {
   background-color: black;
@@ -201,6 +201,9 @@ button:hover {
 }
 .main-btn-box button {
   font-family: "Poppins", sans-serif;
+}
+.main-right {
+  width: 100%;
 }
 .img-box {
   width: 100%;
@@ -549,10 +552,13 @@ meter::-webkit-meter-optimum-value {
     font-size: 1.6rem;
   }
   .bio {
-    width: 100%;
+    width: 85%;
   }
   .about-bio {
     font-size: 2rem;
+  }
+  .main-right {
+    width: 150%;
   }
   .headtext {
     font-size: 1.2rem !important;
@@ -568,8 +574,8 @@ meter::-webkit-meter-optimum-value {
     border-bottom: 0;
   }
   .nav-cell h1 {
-  font-size: 3.2rem;
-}
+    font-size: 3.2rem;
+  }
   .nav-cell ul,
   .hire-btn {
     display: none;
