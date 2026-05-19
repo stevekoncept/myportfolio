@@ -406,10 +406,9 @@ button:hover {
   font-size: 1.1rem;
   padding: 0.5rem 1.4rem;
   border: 1px solid #80808080;
-  border-radius: 0.5rem;
-  font-weight: 100;
+  border-radius: 0.2rem;
+  font-weight: 300;
   letter-spacing: 0.3px;
-  color: black;
 }
 .skills-bar {
   display: grid;
@@ -417,7 +416,7 @@ button:hover {
 }
 .skills-bar label {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: "Space Mono", monospace;
 }
 .skills-bar div label {
@@ -427,7 +426,7 @@ button:hover {
 }
 meter {
   width: 100%;
-  font-size: 0.2rem;
+  font-size: 0.3rem;
 }
 meter::-webkit-meter-bar {
   border-radius: 100px;
