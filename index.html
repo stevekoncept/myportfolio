@@ -25,6 +25,17 @@
     <title>stevetony| Frontend developer</title>
   </head>
   <body>
+    <section id="resp-menu-bar">
+      <div class="menu-cell">
+        <ul>
+          <li><a href="#about" class="about-btn">About</a></li>
+          <li><a href="#skills" class="skills-btn">Skills</a></li>
+          <li><a href="#projects" class="projects-btn">Projects</a></li>
+          <li><a href="#contact" class="contact-btn">Contact</a></li>
+        </ul>
+        <a href="#contact" class="custom-btn resp-hire-btn">Hire me →</a>
+      </div>
+    </section>
     <section class="nav-section">
       <nav class="nav-cell container">
         <h1>Stevetony</h1>
@@ -36,9 +47,11 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <button class="custom-btn hire-btn">
-            <a href="#contact">Hire me →</a>
-          </button>
+          <a href="#contact" class="custom-btn hire-btn">Hire me →</a>
+          <div class="resp-btns">
+            <i class="fa-solid fa-bars" id="open-menu"></i>
+            <i class="fa-solid fa-x" id="close-menu"></i>
+          </div>
         </div>
       </nav>
     </section>
@@ -62,28 +75,29 @@
             making sure every detail looks good and works well.
           </p>
           <div class="main-btn-box">
-            <button class="custom-btn portfolio-btn">
-              <a href="#projects">View Portfolio →</a>
-            </button>
-            <button class="custom-btn hire-btn2">
-              <a href="#contact">Hire me</a>
-            </button>
+            <a href="#projects" class="custom-btn portfolio-btn"
+              >View Portfolio →</a
+            >
+
+            <a href="#contact" class="custom-btn hire-btn2">Hire me</a>
           </div>
         </div>
       </div>
       <div class="main-right">
-        <div class="img-box">
-          <img src="images/picture.png" alt="profle picture" />
-        </div>
-        <div class="img-disc">
-          <div>
-            <p><span>3+</span> yrs Exp</p>
+        <div>
+          <div class="img-box">
+            <img src="images/picture.png" alt="profle picture" />
           </div>
-          <div>
-            <p><span>20+</span> Projects+</p>
-          </div>
-          <div>
-            <p><span>1</span> service</p>
+          <div class="img-disc">
+            <div>
+              <p><span>3+</span> yrs Exp</p>
+            </div>
+            <div>
+              <p><span>20+</span> Projects+</p>
+            </div>
+            <div>
+              <p><span>1</span> service</p>
+            </div>
           </div>
         </div>
       </div>
@@ -188,20 +202,32 @@
       <h1 class="custom-header">MY SKILLS</h1>
       <div class="skills">
         <div>
-          <label for="skill">HTML</label>
+          <label for="skill">
+            <p>Html</p>
+            <p>90%</p></label
+          >
           <meter value="90" min="0" max="100"></meter>
         </div>
         <div>
-          <label for="skill">CSS</label>
+          <label for="skill">
+            <p>CSS</p>
+            <p>80%</p>
+          </label>
           <meter value="80" min="0" max="100"></meter>
         </div>
         <div>
-          <label for="skill">Javascript</label>
-          <meter value="70" min="0" max="100"></meter>
+          <label for="skill">
+            <p>Javascript</p>
+            <p>60%</p>
+          </label>
+          <meter value="60" min="0" max="100"></meter>
         </div>
         <div>
-          <label for="skill">Git & Version control</label>
-          <meter value="70" min="0" max="100"></meter>
+          <label for="skill">
+            <p>Git & Version control</p>
+            <p>60%</p>
+          </label>
+          <meter value="60" min="0" max="100"></meter>
         </div>
       </div>
     </section>
