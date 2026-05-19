@@ -7,6 +7,7 @@ const projectsBtn = document.querySelector(".projects-btn");
 const contactBtn = document.querySelector(".contact-btn");
 const respHireBtn = document.querySelector(".resp-hire-btn");
 
+
 //
 openMenu.addEventListener("click", () => {
   sideResponsiveBar.style.transform = " translateX(0)";
