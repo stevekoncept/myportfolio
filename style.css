@@ -175,6 +175,7 @@ button:hover {
   background-color: black;
   color: white;
   font-size: 1.2rem;
+  font-weight: 900;
 }
 .portfolio-btn:hover {
   background-color: white;
@@ -189,10 +190,12 @@ button:hover {
   font-weight: bold;
   color: black;
   font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 .hire-btn2:hover {
-  background-color: #f8f9fa;
-  border: 0.1px solid #808080;
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s;
 }
 .main-btn-box {
   display: flex;
@@ -339,21 +342,92 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(2, 45%);
   justify-content: space-between;
+}
+.skills-section header h1 {
+  line-height: 1;
+}
+.skill-header {
+  font-size: 5rem;
+  font-weight: 900;
+}
+.skills-section header {
+  margin-bottom: 3rem;
+}
+.tools-txt {
+  color: white;
+  -webkit-text-stroke: 1px #80808080;
+}
+.skills-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-skill {
+  border: 1px solid #80808080;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+}
+.main-skill i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  border: 1px solid #80808080;
+  border-radius: 0.2rem;
+  padding: 0.6rem 2rem;
+  margin-bottom: 1rem;
+}
+.main-skill h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.main-skill p {
+  font-size: 1.6rem;
+  color: gray;
+}
+.tools2 {
+  display: none;
+}
+.tools h3,
+.tools2 h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.tools ul,
+.tools2 ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.tools ul li,
+.tools2 ul li {
+  font-size: 1.1rem;
+  padding: 0.5rem 1.4rem;
+  border: 1px solid #80808080;
+  border-radius: 0.5rem;
+  font-weight: 100;
+  letter-spacing: 0.3px;
+  color: black;
+}
+.skills-bar {
+  display: grid;
   grid-row-gap: 4rem;
 }
-.skills label {
+.skills-bar label {
   display: block;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: "Space Mono", monospace;
 }
-.skills div label {
+.skills-bar div label {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 meter {
   width: 100%;
-  font-size: 1rem;
+  font-size: 0.2rem;
 }
 meter::-webkit-meter-bar {
   border-radius: 100px;
@@ -592,7 +666,7 @@ meter::-webkit-meter-optimum-value {
     top: 0;
     left: 0;
     background-color: white;
-    width: 80%;
+    width: 85%;
     transform: translateX(-500px);
     transition: transform 0.7s ease;
     z-index: 99;
@@ -633,11 +707,21 @@ meter::-webkit-meter-optimum-value {
     justify-self: center;
   }
   .about-section,
-  .skills,
   .project-section,
   .footer-top {
     display: grid;
     grid-template-columns: repeat(1, 100%);
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    row-gap: 3rem;
+  }
+  .tools {
+    display: none;
+  }
+  .tools2 {
+    display: block;
   }
   .footer1 p {
     font-size: 2rem;
