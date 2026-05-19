@@ -134,10 +134,12 @@ button:hover {
 }
 #open-menu {
   display: none;
+  font-size: 4rem;
 }
 #close-menu {
   display: none;
   color: #78350f;
+  font-size: 4rem;
 }
 /*  */
 .main-section {
@@ -565,6 +567,9 @@ meter::-webkit-meter-optimum-value {
     position: static;
     border-bottom: 0;
   }
+  .nav-cell h1 {
+  font-size: 3.2rem;
+}
   .nav-cell ul,
   .hire-btn {
     display: none;
