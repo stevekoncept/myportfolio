@@ -706,6 +706,9 @@ meter::-webkit-meter-optimum-value {
     display: grid;
     justify-self: center;
   }
+  .bio{
+    width: 100%;
+  }
   .about-section,
   .project-section,
   .footer-top {
@@ -716,6 +719,10 @@ meter::-webkit-meter-optimum-value {
     display: grid;
     grid-template-columns: repeat(1, 100%);
     row-gap: 3rem;
+  }
+  .socials a{
+  font-size: 1.4rem;
+
   }
   .tools {
     display: none;
