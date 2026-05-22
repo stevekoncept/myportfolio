@@ -36,6 +36,7 @@ window.addEventListener("resize", () => {
     closeMenu.style.display = "none";
   }
 });
+// 
 closeMenu.addEventListener("click", () => {
   sideResponsiveBar.style.transform = " translateX(-500px)";
   closeMenu.style.display = "none";
