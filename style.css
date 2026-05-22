@@ -9,6 +9,16 @@ body {
   font-family: "Poppins", sans-serif;
   position: relative;
 }
+/* section animation */
+section {
+  opacity: 0;
+  transform: translateY(4rem);
+  transition: all 0.8s ease;
+}
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -150,9 +160,34 @@ button:hover {
   justify-content: space-between;
   gap: 6rem;
 }
-.main-left {
-  /* width: 100%; */
+.first-txt {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
+/* BLINKING EFFECT */
+.dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  background: black;
+  border-radius: 50%;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/*  */
 .name {
   line-height: 1;
   margin-bottom: 2rem;
@@ -279,7 +314,7 @@ button:hover {
 .socials a:hover {
   background-color: black;
   color: white;
-  transition: background-color 0.3s;
+  transition: background-color 0.8s;
 }
 .socials i {
   margin-right: 0.5rem;
@@ -706,7 +741,7 @@ meter::-webkit-meter-optimum-value {
     display: grid;
     justify-self: center;
   }
-  .bio{
+  .bio {
     width: 100%;
   }
   .about-section,
@@ -720,9 +755,8 @@ meter::-webkit-meter-optimum-value {
     grid-template-columns: repeat(1, 100%);
     row-gap: 3rem;
   }
-  .socials a{
-  font-size: 1.4rem;
-
+  .socials a {
+    font-size: 1.4rem;
   }
   .tools {
     display: none;
