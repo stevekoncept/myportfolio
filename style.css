@@ -484,6 +484,20 @@ meter::-webkit-meter-optimum-value {
   color: white;
   -webkit-text-stroke: 1px #80808080;
 }
+.project-text {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.project-text h1 {
+  font-size: 7.2rem;
+  font-weight: 900;
+}
+.project-text p {
+  font-size: 3.2rem;
+  font-family: "Space Mono", monospace;
+  justify-self: center;
+}
 /*  */
 .consult-section {
   background-color: black;
@@ -755,6 +769,12 @@ meter::-webkit-meter-optimum-value {
     grid-template-columns: repeat(1, 100%);
     row-gap: 3rem;
   }
+  .project-text h1 {
+  font-size: 4rem;
+}
+.project-text p {
+  font-size:2rem;
+}
   .socials a {
     font-size: 1.4rem;
   }
