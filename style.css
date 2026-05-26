@@ -447,7 +447,12 @@ button:hover {
 }
 .skills-bar {
   display: grid;
-  grid-row-gap: 4rem;
+  grid-row-gap: 2rem;
+}
+.skills-bar div {
+  background-color: #8080804d;
+  padding: 1.2rem 2rem;
+  border-radius: 1rem;
 }
 .skills-bar label {
   display: block;
@@ -465,7 +470,7 @@ meter {
 }
 meter::-webkit-meter-bar {
   border-radius: 100px;
-  background-color: black;
+  background: white;
 }
 meter::-webkit-meter-optimum-value {
   background: black;
@@ -770,11 +775,11 @@ meter::-webkit-meter-optimum-value {
     row-gap: 3rem;
   }
   .project-text h1 {
-  font-size: 4rem;
-}
-.project-text p {
-  font-size:2rem;
-}
+    font-size: 4rem;
+  }
+  .project-text p {
+    font-size: 2rem;
+  }
   .socials a {
     font-size: 1.4rem;
   }
