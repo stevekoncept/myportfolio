@@ -450,7 +450,7 @@ button:hover {
   grid-row-gap: 2rem;
 }
 .skills-bar div {
-  background-color: rgb(128, 128, 128, 0.2);
+  background-color: rgb(128, 128, 128, 0.1);
   padding: 1.2rem 2rem;
   border-radius: 1rem;
 }
