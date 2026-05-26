@@ -36,7 +36,7 @@ window.addEventListener("resize", () => {
     closeMenu.style.display = "none";
   }
 });
-// 
+//
 closeMenu.addEventListener("click", () => {
   sideResponsiveBar.style.transform = " translateX(-500px)";
   closeMenu.style.display = "none";
@@ -54,3 +54,16 @@ skillsBtn.addEventListener("click", removeScroll);
 projectsBtn.addEventListener("click", removeScroll);
 contactBtn.addEventListener("click", removeScroll);
 respHireBtn.addEventListener("click", removeScroll);
+
+window.addEventListener("DOMContentLoaded", () => {
+  let count = 1;
+  const counter = document.getElementById("counter");
+
+  const interval = setInterval(() => {
+    counter.textContent = count;
+
+    if (count === 20) clearInterval(interval);
+
+    count++;
+  }, 100);
+});
