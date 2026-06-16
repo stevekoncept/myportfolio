@@ -33,13 +33,6 @@ a:link {
   text-decoration: none;
   font-family: "Space Mono", monospace;
 }
-a:visited {
-  /* color: white; */
-}
-a:active {
-  /* color: white; */
-}
-
 button {
   font-family: "Space Mono", monospace;
 }
@@ -437,6 +430,7 @@ button:hover {
   flex-wrap: wrap;
   gap: 1rem;
 }
+
 .tools ul li,
 .tools2 ul li {
   font-size: 1.1rem;
@@ -467,15 +461,15 @@ button:hover {
 }
 meter {
   width: 100%;
-  font-size: 0.3rem;
+  font-size: 0.6rem;
 }
 meter::-webkit-meter-bar {
-  border-radius: 100px;
+  /* border-radius: 100px; */
   background: white;
 }
 meter::-webkit-meter-optimum-value {
   background: black;
-  border-radius: 100px;
+  /* border-radius: 100px; */
 }
 /*  */
 .project-section header {
@@ -490,7 +484,7 @@ meter::-webkit-meter-optimum-value {
   color: white;
   -webkit-text-stroke: 1px #80808080;
 }
-.live-demo{
+.live-demo {
   color: black;
   font-size: 1.2rem;
 }
@@ -498,6 +492,8 @@ meter::-webkit-meter-optimum-value {
   display: grid;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
+
 }
 .project-text h1 {
   font-size: 7.2rem;
@@ -509,12 +505,14 @@ meter::-webkit-meter-optimum-value {
   justify-self: center;
 } */
 .project-box {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  gap: 1.5rem;
 }
 .project {
-  width: 50%;
+  /* width: 50%; */
   border: 2px solid #80808080;
   border-radius: 1rem;
 }
@@ -525,9 +523,8 @@ meter::-webkit-meter-optimum-value {
   border-top-right-radius: 1rem;
   border: 0;
 }
-.img-box img{
+.img-box img {
   border-bottom: 1px solid #80808080;
-
 }
 .project-down {
   padding-block: 0 1.6rem;
@@ -553,11 +550,11 @@ meter::-webkit-meter-optimum-value {
 .languages p {
   font-size: 1.4rem;
   border: 2px solid black;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 1rem;
   border-radius: 10rem;
   transition: background-color 0.8s;
   /* font-family: "Space Mono", monospace; */
-  font-weight: 700;
+  font-weight: bold;
   letter-spacing: 1;
 }
 .languages p:hover {
@@ -776,8 +773,6 @@ meter::-webkit-meter-optimum-value {
   .skills {
     grid-template-columns: repeat(2, 48%);
   }
-  .project {
-  width: 70%;}
 }
 
 @media (max-width: 480px) {
@@ -894,6 +889,4 @@ meter::-webkit-meter-optimum-value {
     flex-direction: column;
     font-size: 1.4rem;
   }
-  .project {
-  width: 100%;}
 }

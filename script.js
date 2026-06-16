@@ -6,8 +6,8 @@ const skillsBtn = document.querySelector(".skills-btn");
 const projectsBtn = document.querySelector(".projects-btn");
 const contactBtn = document.querySelector(".contact-btn");
 const respHireBtn = document.querySelector(".resp-hire-btn");
-
 const sections = document.querySelectorAll("section");
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -67,3 +67,11 @@ window.addEventListener("DOMContentLoaded", () => {
     count++;
   }, 100);
 });
+
+
+// const hireBtn = document.querySelector(".whatsapp-btn");
+// const aboutSec = document.querySelector(".project-section");
+
+// hireBtn.addEventListener("click", function (e) {
+//   aboutSec.scrollIntoView({ behavior: "smooth" });
+// });
