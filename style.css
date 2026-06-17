@@ -125,7 +125,7 @@ button:hover {
 }
 .nav-cell ul a:hover {
   border-bottom: 2px solid black;
-  transition: all 1s ease-out;
+  transition: all 1s ease-in;
 }
 .nav-cell button {
   text-transform: uppercase;
@@ -719,7 +719,9 @@ meter::-webkit-meter-optimum-value {
   letter-spacing: 1px;
   line-height: 1;
 }
-
+.resp-home {
+  display: none;
+}
 /*  */
 @media (max-width: 1200px) {
   html {
@@ -818,16 +820,6 @@ meter::-webkit-meter-optimum-value {
     line-height: 8rem;
     margin-bottom: 3rem;
   }
-  .resp-hire-btn {
-    background-color: black;
-    color: white;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 2rem;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif !important;
-  }
   .main-section {
     padding-top: 2%;
     display: grid;
@@ -888,5 +880,11 @@ meter::-webkit-meter-optimum-value {
     align-items: center;
     flex-direction: column;
     font-size: 1.4rem;
+  }
+  .main-home {
+    display: none;
+  }
+  .resp-home {
+    display: block;
   }
 }

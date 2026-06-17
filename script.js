@@ -5,7 +5,6 @@ const aboutBtn = document.querySelector(".about-btn");
 const skillsBtn = document.querySelector(".skills-btn");
 const projectsBtn = document.querySelector(".projects-btn");
 const contactBtn = document.querySelector(".contact-btn");
-const respHireBtn = document.querySelector(".resp-hire-btn");
 const sections = document.querySelectorAll("section");
 
 const observer = new IntersectionObserver(
@@ -53,7 +52,6 @@ aboutBtn.addEventListener("click", removeScroll);
 skillsBtn.addEventListener("click", removeScroll);
 projectsBtn.addEventListener("click", removeScroll);
 contactBtn.addEventListener("click", removeScroll);
-respHireBtn.addEventListener("click", removeScroll);
 
 window.addEventListener("DOMContentLoaded", () => {
   let count = 1;
