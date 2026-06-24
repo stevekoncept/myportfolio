@@ -25,8 +25,6 @@ sections.forEach((section) => {
 
 openMenu.addEventListener("click", () => {
   sideResponsiveBar.style.transform = " translateX(0)";
-  openMenu.style.display = "none";
-  closeMenu.style.display = "block";
   document.body.classList.toggle("no-scroll");
 });
 window.addEventListener("resize", () => {
@@ -38,15 +36,11 @@ window.addEventListener("resize", () => {
 //
 closeMenu.addEventListener("click", () => {
   sideResponsiveBar.style.transform = " translateX(-500px)";
-  closeMenu.style.display = "none";
-  openMenu.style.display = "block";
   document.body.classList.remove("no-scroll");
 });
 const removeScroll = function () {
   document.body.classList.remove("no-scroll");
   sideResponsiveBar.style.transform = " translateX(-500px)";
-  closeMenu.style.display = "none";
-  openMenu.style.display = "block";
 };
 aboutBtn.addEventListener("click", removeScroll);
 skillsBtn.addEventListener("click", removeScroll);

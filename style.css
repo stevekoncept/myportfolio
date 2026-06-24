@@ -141,8 +141,12 @@ button:hover {
 }
 #close-menu {
   display: none;
-  color: #78350f;
+  color: black;
   font-size: 4rem;
+  display: flex;
+  justify-self: end;
+  padding-top: 3rem;
+  padding-right: 3rem;
 }
 /*  */
 .main-section {
@@ -794,18 +798,24 @@ meter::-webkit-meter-optimum-value {
   }
   #resp-menu-bar {
     height: 100vh;
-    display: grid;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: white;
-    width: 85%;
+    width: 100%;
     transform: translateX(-500px);
     transition: transform 0.7s ease;
     z-index: 99;
+    display: block;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(70px);
   }
+  .menu-cell {
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    margin-top: 30%;
+  }
+
   .menu-cell ul a {
     color: black;
     font-family: "Poppins", sans-serif;
@@ -850,6 +860,9 @@ meter::-webkit-meter-optimum-value {
   }
   .project-text p {
     font-size: 2rem;
+  }
+  .project-box {
+    gap: 2.5rem;
   }
   .socials a {
     font-size: 1.4rem;
