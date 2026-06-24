@@ -21,7 +21,7 @@ const observer = new IntersectionObserver(
 );
 sections.forEach((section) => {
   observer.observe(section);
-});
+}); 
 
 openMenu.addEventListener("click", () => {
   sideResponsiveBar.style.transform = " translateX(0)";
